@@ -1,4 +1,4 @@
-package day3.lambda;
+package day4.lambda;
 
 /*
 
@@ -8,13 +8,11 @@ in Sort method use Lambda in comparator.
  */
 
 import data.Employee;
-import day3.functionalinterface.Q1;
+import day4.functionalinterface.Q1;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-
-import static day3.functionalinterface.Q1.employeeConsumer;
 
 public class EmployeeSortByMonth {
 

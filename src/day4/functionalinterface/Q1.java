@@ -1,4 +1,4 @@
-package day3.functionalinterface;
+package day4.functionalinterface;
 
 /*
 Create list of employees and print list of employees whose salary is above 2000.

@@ -1,4 +1,4 @@
-package day3.functionalinterface;
+package day4.functionalinterface;
 
 import data.Employee;
 import data.User;
