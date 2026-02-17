@@ -1,9 +1,9 @@
-package day3.lambda;
+package day4.lambda;
 
 import customfunctionalinterface.UserNameGenerator;
 import data.Employee;
 import data.User;
-import day3.functionalinterface.Q2;
+import day4.functionalinterface.Q2;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
