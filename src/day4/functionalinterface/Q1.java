@@ -22,26 +22,34 @@ public class Q1 {
     public static void employeeWithSalaryGreaterThan() {
         List<Employee> employees = Employee.getSampleEmployees();
 
-        employees.forEach(employee -> {
-            if(employeePredicate.test(employee)) {
-                employeeConsumer.accept(employee);
-            }
-        });
+//        employees.forEach(employee -> {
+//            if(employeePredicate.test(employee)) {
+//                employeeConsumer.accept(employee);
+//            }
+//        });
+
+        employees.stream()
+                .filter(employeePredicate)
+                .forEach(employeeConsumer);
     }
 
-    public static void employeeWithSalaryGreaterThanUsingBiPredicate(int amount) {
-        List<Employee> employees = Employee.getSampleEmployees();
-
-        employees.forEach(employee -> {
-            if(biPredicate.test(employee, amount)) {
-                employeeConsumer.accept(employee);
-            }
-        });
-    }
+//    public static void employeeWithSalaryGreaterThanUsingBiPredicate(int amount) {
+//        List<Employee> employees = Employee.getSampleEmployees();
+//
+////        employees.forEach(employee -> {
+////            if(biPredicate.test(employee, amount)) {
+////                employeeConsumer.accept(employee);
+////            }
+////        });
+//
+//        employees.stream()
+//                .filter(employeePredicate)
+//                .forEach(employeeConsumer);
+//    }
 
 
     public static void main(String[] args) {
         employeeWithSalaryGreaterThan();
-        employeeWithSalaryGreaterThanUsingBiPredicate(2000);
+//        employeeWithSalaryGreaterThanUsingBiPredicate(2000);
     }
 }
