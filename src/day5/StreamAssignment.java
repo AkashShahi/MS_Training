@@ -32,7 +32,7 @@ public class StreamAssignment {
         List<Employee> employees = Employee.getSampleEmployees();
 
         return employees.stream()
-                .filter(employee -> !employee.getDept().equals("HR"))
+                .filter(employee -> !"HR".equals(employee.getDept())) //
                 .sorted(Comparator.comparing(employee -> employee.getFirstName()))
                 .collect(Collectors.toList());
 
